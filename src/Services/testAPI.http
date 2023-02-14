@@ -1,0 +1,38 @@
+## GET users
+
+GET https://reqres.in/api/users?page=1 HTTP/1.1
+content-type: application/json
+
+#### GET Single User
+
+GET https://reqres.in/api/users/2 HTTP/1.1
+content-type: application/json
+
+
+
+#### Create New User
+
+POST https://reqres.in/api/users HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Test Name",
+    "job": "developer"
+}
+
+#### Update User
+
+PUT https://reqres.in/api/users/2 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Test Name",
+    "job": "developer"
+}
+
+
+#### Delete User By ID
+
+DELETE https://reqres.in/api/users/2 HTTP/1.1
+content-type: application/json
+
